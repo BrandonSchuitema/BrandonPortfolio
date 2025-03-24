@@ -90,6 +90,7 @@ button:hover{
     border-radius: 10%;
     transition: 0.5s ease-in-out;
     padding-right: 1%;
+    padding-bottom: 1%;
 }
 .image:hover{
     border-radius: 20%;
@@ -102,4 +103,58 @@ button:hover{
     border: 3px solid black;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+.slink{
+    border: 2px solid rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+    transition: 0.5s;
+}
+.alink{
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.alink:hover{
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+}
+.slink:hover{
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+}
+
+.slist{
+    border: 2px solid rgba(0, 0, 0, 0);
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slist:hover{
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+}
+
+.thisBorder{
+    border: 10px solid black;
+    border-radius: 50px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+}
+
+.item{
+    padding: 0.3%;
+    width: 20%;
+}
+.vitem{
+    padding: 0.3%;
+    width: 30%;
 }

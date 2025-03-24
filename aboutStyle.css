@@ -59,7 +59,15 @@ button:hover{
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
 }
-
+.alink{
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.alink:hover{
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+}
 .slist{
     border: 2px solid rgba(0, 0, 0, 0);
     text-align: center;
