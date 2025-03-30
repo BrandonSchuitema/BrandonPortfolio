@@ -84,6 +84,17 @@ button:hover{
     border: 5px solid black;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
+
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    font-family: calibri;
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .emmail:hover{
     border: 5px solid lightblue;
@@ -106,4 +117,32 @@ button:hover{
     to{
         transform: rotate(360deg);
     }
+}
+
+.alink{
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.alink:hover{
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+}
+
+.MMPicture{
+    border: 10px solid black;
+    background: url("Images/game_screenshot_extra_four.png");
+    color: white;
+    width: 40%;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 0 auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
