@@ -99,10 +99,8 @@ button:hover{
 }
 
 .workButton{
-    background-color: transparent;
-    border: 3px solid black;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    background-color: #537895;
+    border: 3px solid white;
 }
 
 .slink{
