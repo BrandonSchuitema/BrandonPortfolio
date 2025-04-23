@@ -135,7 +135,8 @@ textarea {
 .main-container {
   max-width: 120rem;
   margin: auto;
-  width: 92%; }
+  width: 92%;
+}
 
 .btn {
   background: #fff;
@@ -359,6 +360,9 @@ textarea {
     margin-top: 5rem;
     text-align: center; }
 
+.project-details{
+  background: #00052c;
+}
 .project-details__content {
   padding: 8rem 0;
   max-width: 90rem;
@@ -366,6 +370,7 @@ textarea {
   .project-details__content-title {
     font-weight: 700;
     font-size: 2.8rem;
+    color: white;
     margin-bottom: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .project-details__content-title {
@@ -381,14 +386,15 @@ textarea {
 .project-details__content-main {
   width: 100%;
   max-width: 70rem;
-  margin: auto; }
+  margin: auto;
+}
 
 .project-details__desc {
   margin: 0 0 7rem 0; }
   .project-details__desc-para {
     font-size: 1.8rem;
     line-height: 1.7;
-    color: grey;
+    color: white;
     margin-bottom: 2rem; }
 
 .project-details__tools-used {
@@ -443,7 +449,7 @@ textarea {
     color: #ffffff;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #0062b9; }
+      color: #00f2ff; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
