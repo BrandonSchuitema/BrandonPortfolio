@@ -386,7 +386,7 @@ textarea {
 .project-details__content-main {
   width: 100%;
   max-width: 70rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .project-details__desc {
@@ -505,7 +505,7 @@ textarea {
   .header__main-ham-menu-close {
     width: 100%; }
   .header__sm-menu {
-    background: #fff;
+    background: black;
     position: absolute;
     width: 100%;
     top: 100%;
@@ -527,15 +527,15 @@ textarea {
     text-decoration: none;
     padding: 2.5rem 3rem;
     font-size: 1.6rem;
-    color: #333;
+    color: white;
     text-align: right;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid black;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: #0062b9; }
+      color: #00f2ff; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
