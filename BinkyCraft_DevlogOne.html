@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog One</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/brandon_picture_mainpage.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Brandon Schuitema</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projects</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Extra Work</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Extra Work </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog One
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogOne/Screenshot 2026-03-28 235151.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog One Overview</h3>
+              <p class="project-details__desc-para">
+                This is the first devlog for the exciting game and project that I've been working on for a while now.
+                There are a lot of interesting features already in the game, and a lot to come. So stay tuned for more updates.
+                This first devlog will mostly be an overview of the project as a whole, and future devlogs will be more in depth on specifics.
+              </p>
+              <p class="project-details__desc-para">
+                This game is heavily inspired by Minecraft, and like the original, my game isn't made with cubes as people would think, 
+                but is instead made using voxels. Fun fact: this is my first time ever working with voxels, so I had a lot of research to do 
+                when I first started working on this project. 
+                For those that don't know, voxels are in a way 3D pixels. Not really, but that's how I like to think of them.
+                And like the original Minecraft, these voxels are combined to create chunks, which are then in turn combined to create the world.
+              </p>
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                One of the main features of my game is a staple of voxel/ sandbox games: placing and destroying blocks.
+                This is basically done by having an invisible block in front of the player that aligns with the voxels,
+                and when I click the button to destroy or place a block, the chunk looks for the voxel located at the position of that invisible block.
+                Right now, I have a limited inventory system for testing, but I can select specific blocks and place those in the world to create buildings.
+              </p>
+              <p class="project-details__desc-para">
+                Another main feature of the game is the world generation. The world as stated before is made using voxels.
+                The voxels come in sets, or chunks, which are combined together to create the world that the player experiences.
+                The terrain itself has different types of levels to it,such as hills and plains. 
+                Then there are the different biomes, with different related blocks. More on biomes in another section.
+                There are also the caves underground. The above ground terrain is made with perlin noise, which raises or lowers the voxels in each biome.
+                For those that don't know, perlin noise refers to a black and white image where the white gives higher blocks, and black gives lower blocks.
+                For caves, I had to combine two of these perlin noise sheets in a 'it works-ish' kind of way, to create makeshift air pockets for caves.
+                Each biomes also had a node system to add blocks within the terrain. This would be used for things like coal or diamond ore.
+                These nodes come with scale and distance variables that allow me to choose how rare a block can be.
+                The world generation is likely something I'll talk more about in the next devlog,
+                as there's a lot of things I want to do with it. Especially when I start really working on other dimensions like the nether.
+              </p>
+              <p class="project-details__desc-para">
+                The lighting was a difficult feature to implement, and in honesty... isn't fully done because that is difficult!
+                Right now, blocks will look for a solid block above them, and if they find one, the block will darken.
+                Then the block will look to the other blocks around it, and lighten till it reaches the standard lighting of other blocks.
+                And there's currently some problems with this, so I got a lot of research to do. That's part of the fun of this project.
+              </p>
+
+              <h3 class="project-details__content-title">Biomes</h3>
+              <p class="project-details__desc-para">
+                One of the interesting features in this game would be biomes, of which there are a few already:
+                Grasslands, Desert, Birch/ Spruce/ Oak Forest, and Rocky Plains.
+                Each biome has their own structures/ environment creations. That would be trees, cacti, pumpkins, big rock piles, and several more as well.
+                Some biomes come with a combination of a few of the above creations.
+                Earlier in the devlog I talked about using a node system for biomes to create blocks within the terrain.
+                I use a similar system to create these creations. Changing variables will allow me to choose how dense a forest is or how far away a clump of pumpkins could be.
+                To determine where the biome limits are, I use perlin noise, which is the same system I used to make the terrain levels.
+                It kind of just paints the terrain with height levels, and changes the blocks within the biome.
+                I might talk more about biome creation in future devlogs, if I do major interesting things with them.
+              </p>
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                This is my first devlog, so there isn't much blocks in the game yet, but there are a few.
+                And since this is my own game I'm able to add some of my own blocks, which aren't in the original Minecraft.
+                One such block is Stone Pillar, a block that I really wish was in the original game (picture of block at bottom of the page).
+                Most blocks so far are naturally occuring ones such as grass, sand, dirt, and more.
+                In the future, once I get the crafting system implemented, I'll likely start adding as many blocks as I can think of.
+                Mostly ones for building, since that is mostly what I enjoy doing in sandbox type games.
+              </p>
+              <p class="project-details__desc-para">
+                Currently blocks don't have directionality to them, so logs can't face the player when their placing them. 
+                But that is something that I'm working on trying to create. I do have transparent blocks though, which are kind of interesting.
+                I'd talk about how those work, but I didn't really explain how voxels work at all, so transparent ones wouldn't make sense.
+                Which is true, but I also just don't want to: there's a lot of text in this first devlog, and I don't want to scare away the reader. 
+                Maybe in another devlog.
+              </p>
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                There's a lot more I could be talking about, but since all systems are in progress as I combine them to other systems and features I add into the game,
+                I don't want to overflow the first devlog of this game. I'll talk more about some of the other aspects of the game in future devlogs,
+                when I work more upon them.
+                Some of the other things I'm working on are inventories, more unique blocks, structures, player hearts (and other stats),
+                enemies, day/ night cycle, other dimensions, and so much more.
+                I've been working so much on this project, that even while working on this devlog, more updates have been done,
+                making this devlog out of date. And I'm not gonna go and change up what I already wrote.
+                So, look forward to the next devlog, where I'll likely get more in depth with the specific systems I'm working on,
+                and not just extreme overviews of the whole project.
+                And in the next devlog I'll try to add in pictures of what I'm talking about. That might make it possible for the reader to actually know what I'm talking about.
+                And maybe I won't just jam a bunch of pictures at the end of the devlog.
+                Anyways, look forward to the next devlog.
+              </p>
+            </div>
+
+                <a
+                href="BinkyCraft.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogOne/Screenshot 2026-03-28 234720.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogOne/Screenshot 2026-03-28 234853.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogOne/Screenshot 2026-03-28 235151.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogOne/Screenshot 2026-03-28 235227.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogOne/Screenshot 2026-03-28 235249.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogOne/Screenshot 2026-03-28 235514.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogOne/Screenshot 2026-03-28 235524.png" style="width: 50%;">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Unity/ C#</div>
+                <div class="skills__skill">Gimp</div>
+                <div class="skills__skill">Amazing Brain Power</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/BrandonSchuitema">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://koopwhip1129.itch.io/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/itch.io.webp"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Brandon Schuitema</h4>
+            <p class="main-footer__short-desc">
+              Game Programmer, Designer, 3D Modeller, and the Best Ever!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
