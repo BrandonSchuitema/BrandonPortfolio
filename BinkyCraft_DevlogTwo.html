@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog One</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/brandon_picture_mainpage.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Brandon Schuitema</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projects</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Extra Work</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Extra Work </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Two - The Inferno Realm
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogTwo/inferno_realm_landscape.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Two Overview</h3>
+              <p class="project-details__desc-para">
+                I've been focusing a lot on what I'm what calling the Inferno Realm. It's just my version of the Nether from Minecraft.
+                It's still in progress, as everything I've been working on still is, but it's kinda cool regardless.
+              </p>
+              <p class="project-details__desc-para">
+                Right now there is no official way to get to the Inferno Realm from the Overworld, but I do have some ideas for that.
+                And they might even be implemented by the next devlog. Depends on how much I get distracted by other ideas I want to add into the game.
+              </p>
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                The Inferno Realm doesn't really have much in the way of features, but I've been pushing my world generation to the limit.
+                The hills are much bigger than in the overworld, and the caves are less caves and more giant cavernous holes in the inferno realm.
+                In the pictures below, you'll also notice a unique feature I thought would make the inferno realm feel more interesting: giant blackstone pillars.
+                You'll also notice in the pictures below is the glow stone I have peppered throughout in the lower layers in the ground.
+                I'll likely change this out for another block in the future, but I like the idea of a block being in the ground like that.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogTwo/inferno_realm_landscape.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTwo/inferno_realm_deep_hole.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTwo/inferno_realm_hole.png" style="width: 50%;">
+            </div>
+              <p class="project-details__desc-para">
+                You'll have to forgive some of the rendering problems and cross chunk lighting problems I'm having.
+                That area is far from my expertise, and I'm having problems solving those issues.
+                I'll get it fixed up eventually, I'm just going to learn more about the issue slowly before I attempt to mess more with it.
+              </p>
+              <p class="project-details__desc-para">
+                Another cool game feature I've added in is that blocks now drop their respective items.
+                It's just pngs with item icons, but it works for now. When breaking a block, the dropped item will spawn and fall onto the ground below.
+                Then it'll hover there and face the player till it eventualy despawns. In the future, I think I want to add a cool animation to the dropped item,
+                but that isn't the type of thing I want to prioritize right now. Not that I really work on important features right now.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogTwo/overworld_drop_items.png" style="width: 50%;">
+            </div>
+
+              <h3 class="project-details__content-title">Biomes</h3>
+              <p class="project-details__desc-para">
+                The Inferno Realm has two different biomes currently: Desolate Hills and Lava Depths.
+                I don't actually have any water or lava in the game yet, but when I do, lava will go in the depths.
+                That part will make my Inferno Realm look more similar to the Nether in Minecraft.
+              </p>
+              <p class="project-details__desc-para">
+                The Desolate Hills is an interesting biome to look at. Using the Blackstone block I added into the game,
+                I created giant blackstone pillars jutting out of the hills. This really adds a sense of height into the dimension.
+                That height is complimented by the giant gaping holes I've generated above and below ground. They really are everywhere,
+                and are even bigger than they look. There's pictures of this earlier on in the devlog.
+              </p>
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                There has been a few more blocks added into the new dimension. The main one is Inferno Stone, which is basically just Netherack from Minecraft.
+                Others are Blackstone, Quartz Ore, and Glowstone. Those three are all from Minecraft as well, though I use them in very different fashions.
+              </p>
+              <p class="project-details__desc-para">
+                I've also been adding a lot of other items and blocks, not just those related to the Inferno Realm.
+                For instance, I've added tools such as a shovel, axe, pickaxe, sword, and a hoe.
+                With those tools, I've implemented the feature of using those tools to harvest their respective blocks.
+                So shovels can mine dirt, and axes can chop wood, and the other tools follow work along that line.
+                Right now, the blocks can't be mined with the player's bare hands, and can be only insta-mined with the tools,
+                but that's something I'm debating how exactly I want to work, since I don't want an exact copy of Minecraft and it's exact features.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogTwo/overworld_tools.png" style="width: 50%;">
+            </div>
+              <p class="project-details__desc-para">
+                For the players convenience, I've added what tools are required to mine a block in the debug menu.
+                By the way, I do have a debug menu, though there isn't much in it yet.
+                Anyways, you can see the menu and tool requirement in the above picture.
+              </p>
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                The main feature of this devlog is the Inferno Realm, where I've been doing some interesting terrain,
+                and adding in cool blocks. As I mentioned earlier, it's not done, but it's just cool enough to have another dimension in the game.
+                I'm not sure what I want to do for the next devlog, but don't be surprised if there's a bunch of new blocks,
+                as I've been planning a bunch of blocks to add as a side thing for the project.
+              </p>
+              <p class="project-details__desc-para">
+                There isn't actually that much in this devlog compared to the first devlog, but I do have a full time job.
+                Can't be spending all my time working on this project. I've also worked on more in this devlog than I mentioned.
+                Such as all the new item icons that don't serve a purpose yet, such as: carrot, stick, egg, a brick, and so much more.
+                There's a lot of small things like that - that don't serve enough of a purpose yet to talk about.
+                Other examples of this is the player inventory or enemies. Both things that work, but aren't fleshed out enough with the other systems to talk about.
+                So, they'll get pushed to other devlogs in the future.
+              </p>
+            </div>
+
+                <a
+                href="BinkyCraft.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogTwo/inferno_realm_deep_hole.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTwo/inferno_realm_hole.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTwo/inferno_realm_landscape.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTwo/overworld_drop_items.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTwo/overworld_tools.png" style="width: 50%;">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Unity/ C#</div>
+                <div class="skills__skill">Gimp</div>
+                <div class="skills__skill">Amazing Brain Power</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/BrandonSchuitema">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://koopwhip1129.itch.io/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/itch.io.webp"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Brandon Schuitema</h4>
+            <p class="main-footer__short-desc">
+              Game Programmer, Designer, 3D Modeller, and the Best Ever!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
