@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog Four</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/brandon_picture_mainpage.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Brandon Schuitema</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projects</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Extra Work</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Extra Work </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Four - Crafting
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogFour/binkycraft_craft_diamond_pickAxe.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Four Overview</h3>
+              <p class="project-details__desc-para">
+                Yah, I don't think anybody is surprised by the theme of this devlog.
+                Kinda hinted pretty hard at it in the last devlog that I wanted to work on crafting.
+                And it was some work, for all the wrong reasons, let me tell you.
+              </p>
+              <p class="project-details__desc-para">
+                While working on this update I found quite a few over sights I had made in my programming,
+                and that led me down quite a rabbit hole. But it's working quite nicely now, thankfully.
+              </p>
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                The main feature of this devlog is of course the new crafting feature.
+                It's very similar to how crafting works in Minecraft. The main exception is that mine isn't as dynamic.
+                Which just means that the player has to be specific with where they place items in the crafting table.
+                They also can't substitute blocks in a recipe, such as using two different wood types to make a stick:
+                it has to be two of the same type.
+              </p>
+              <p class="project-details__desc-para">
+                The crafting system was actually pretty simple to set up, and that's mainly because I was so, so, lazy about it.
+                I set up scriptable objects (basically data containers) for the recipes, and these had a list that I could input
+                the ingredients into. The crafting table would look through it's nine slots, and cross reference the items within
+                against the array of recipes. If the recipe ingredients and crafting table slots both had the right items in the right slots,
+                then an item could be crafted. Just had to press the button to craft.
+                Hopefully I explained that right. It was simple to set up at the very least.
+                Anyways, here are a few of the recipes I have in the game, because pictures are nice to look at.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_craft_red_wool.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_craft_rein_red_wool.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_craft_stone_bricks.png" style="width: 50%;">                        
+            </div>              
+              <p class="project-details__desc-para">
+                I'll likely spend some time far in the future re-working this and making it more dynamic and what not, but I just wanted
+                something in the game that'd work. And now I have that.
+              </p>              
+              <p class="project-details__desc-para">
+                Now, along with the crafting table, I had to make how items moved around the inventory more user friendly.
+                Previously the player could only select whole stacks of blocks and move them into different slots.
+                But now, the player can split stacks in half, drop a single item from a stack, and merge stacks into one.
+                This is where quite a bit of my time went.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_half_stack.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_single_item.png" style="width: 50%;">                      
+            </div>                
+              <p class="project-details__desc-para">
+                Basically when I had something working, I would notice a stupid problem. Let me give you an example.
+                I mentioned you could split a stack in half. I didn't think players would try that with only 1 item in the stack.
+                I only did it by accident, and got two stacks of 1 and 0 in number of items. Glad I found that before a player did.
+                Another annoyance I found: I mentioned how the player could drop a single item. I didn't think they would keep going
+                even after the stack hit 0 items. I would think they would just combine the stacks. But if the player did it one by one,
+                they could enter into the negative for the number of items in the stack.
+                What I'm getting at is that there were so many conditions such as these, that I for some reason didn't think about,
+                and I would only realize at a later point. Forcing me to come back and add another few lines of code.
+                There was so much of this... but it's done now! Thankfully.
+              </p>                                      
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                During the last devlog I added a bunch of new blocks, so I didn't even think of adding any for this update.
+                I still did though, but only a few that I had a feeling players might try to craft.
+                That would be the blocks of diamond, iron, and gold. Which every player in Minecraft has built a house out of.
+                So, really they're essential to have in the game, and it's criminal I haven't added them until now.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_cool_blocks.png" style="width: 50%;">
+            </div>
+            
+              <h3 class="project-details__content-title">Items</h3>
+              <p class="project-details__desc-para">
+                Most of the items in the game that I have been adding have been blocks: placeable items.
+                But now I can really start to add items into the game that are meant to be used within the menus of the game.
+                This would be stuff like iron ingots, or string, or sticks, or other things along those lines.
+                I currently don't have anything substantial that isn't already in Minecraft, but I have been adding a lot of these
+                types of items already. Like the 16 different dye colours I added.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_items.png" style="width: 50%;">
+            </div>
+              <p class="project-details__desc-para">
+                There are of course more 'menu items' than in the picture above, but I just wanted to show off a few.
+                Not that I'm an artist and they look good - just that I'm happy the game is starting to fill out some more.
+                And pictures are nice to look at.
+                Also for the ores of the game, the blocks do look different so that colour blind people can tell them apart.
+                It's good practice to do. I was lazy and didn't change how the dye colour icons look (except their colours); at least for now.
+                I have limited time and wanted to not do that right then. I know it'll be a problem in the future.
+              </p>                              
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                This is a slightly shorter devlog, but I finished what I wanted to and want to work on another aspect of the game.
+                I'm trying to keep the information within a devlog contained around a certain part of the game that I was working on.
+                For this devlog, that would be crafting.
+              </p>
+              <p class="project-details__desc-para">
+                Also I know the UI within the game looks bad. There is a reason for that: I'm still using a combination of 
+                Unity art and Minecraft art. I haven't made anything for myself yet for anything involving the UI.
+                Other than the icons themselves of course. The look of the UI will come in a far future devlog when I have more UI 
+                related systems in the game. Like the furnace for instance, which still does nothing as of yet.
+              </p>
+              <p class="project-details__desc-para">
+                I'm not sure what I'm going to do for the next devlog. There is so much to choose from and I'm always wanting to work on something new.
+                I know I'm really trying to get to the point where I can get people into the game to start doing stuff,
+                so I need to start cracking down and start working on more core features.
+                That would be stuff like being able to pick up the dropped items, being able to punch a tree, and not just chop it with an axe only,
+                or crafting not only in the crafting table, but the small version (2x2) inside the player's inventory.
+                Then there's also the enemies, hunger, combat, and so much more.
+                So, maybe the next devlog will be something from that list. Who really knows though.
+              </p>              
+            </div>
+
+                <a
+                href="BinkyCraft.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_cool_blocks.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_craft_diamond_pickAxe.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_craft_red_wool.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_craft_rein_red_wool.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_craft_stone_bricks.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_half_stack.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_items.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFour/binkycraft_single_item.png" style="width: 50%;">                        
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Unity/ C#</div>
+                <div class="skills__skill">Gimp</div>
+                <div class="skills__skill">Amazing Brain Power</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/BrandonSchuitema">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://koopwhip1129.itch.io/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/itch.io.webp"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Brandon Schuitema</h4>
+            <p class="main-footer__short-desc">
+              Game Programmer, Designer, 3D Modeller, and the Best Ever!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
