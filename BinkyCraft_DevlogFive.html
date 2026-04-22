@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog Five</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/brandon_picture_mainpage.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Brandon Schuitema</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projects</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Extra Work</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Extra Work </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Five - Basic Game Systems
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogFive/binkycraft_properBlocks.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Five Overview</h3>
+              <p class="project-details__desc-para">
+                This will be a small devlog, and there is a reason for that. The next two devlogs will be very big.
+                At least, the next one will be for sure. So, look forward to that.
+                This devlog is about some essential systems to get the game ready for people to start testing it.
+                Is the game ready for playtesters? Not really, it's barely anything as of yet.
+                But I want to get a couple people in soon to start telling me some of the major problems with the game so far,
+                and what kinds of things they think I should put more of a priority towards.
+              </p>
+              <p class="project-details__desc-para">
+                Luckily if I just want to get people playing a very in development game, there is a lot I don't have to include in the product.
+                Like saving for instance, which will be in a future devlog. Stuff like that.
+              </p>
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                One of the main systems that I somehow didn't have until now, but I put together for this devlog is the 
+                player being able to pick up items. This wasn't even that hard to do, I just never got around to it until now.
+                I'll quickly explain how this works.
+                When the player gets close to a dropped item, the item will look through the tool bar for the same item.
+                If it finds nothing, it'll look for the first empty space it could go in.
+                If it doesn't find an empty space, it'll repeat the process, but for the player's inventory.
+                It'll look for the same item, and if it doesn't find it, will look for the first empty slot.
+                I was going to show a picture for this, but it wouldn't really convey well in a picture.
+                And I'm too lazy to take a video. You'll see it naturally anyways in the pictures for the next feature I talk about.
+              </p>
+              <p class="project-details__desc-para">
+                Another thing I never had in the game until now is the player being able to destroy blocks with just their hands.
+                Previously if the player wanted to destroy, lets say a wooden log, they would've had to use an axe.
+                That could be a problem for somebody just starting the game. But now they can punch a tree, get wood, make a pickaxe,
+                and start getting stone to make a stone pickaxe and then go mining for diamonds.
+                Because why not, I took some pictures of that walk through from punch wood to diamonds.
+                Though doing so, made me realize that I don't actually have stone tools, and only thought I did.
+                So, I'll add those in behind the scenes.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_punchWood.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_first_pickaxe.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_stone_pickaxe.png" style="width: 50%;">     
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_found_diamonds.png" style="width: 50%;">                     
+            </div>              
+              <p class="project-details__desc-para">
+                Another simple feature related to mining is that blocks now drop their proper items.
+                Yah, as part of my goal to get things ready for players, I thought this was important.
+                Previously the blocks were just dropping what that block was. Not useful for most ores in the game.
+                And how did I expect player's to craft a diamond pickaxe when they weren't even able to get diamonds?
+                They could only get the ore variation before.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_properBlocks.png" style="width: 50%;">                    
+            </div>                          
+              <p class="project-details__desc-para">
+                I have realized something while playing and testing my game. The only way for the player to know what block 
+                they're using is to place it and look at it through the debug screen. Which isn't very user friendly.
+                And doesn't work with items that can't be placed, like rotten flesh, bones, seeds, and much more.
+                Now, I have a little mouse pop-up in the inventories which will say the block name of whatever icon the 
+                mouse is hovering over. I really like this feature.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_viewedItem.png" style="width: 50%;">                    
+            </div>                
+              <p class="project-details__desc-para">
+                Now, I'm only explaining this next part because it will give a glimpse into how I think and how I plan stuff.
+                Not that there is much of any reasoning behind what I do.
+                Right now this pop-up box is at a set size, no matter how much text is held within.
+                That means that long names will not fit nicely within. This is something very easy to fix.
+                I'd just have to change the width by a slight amount for each character within the text.
+                But I want to save that kind of extra decoration for later in development, even if it is easy for me to implement.
+                My thinking is that during a devlog in the future, I'll add a bunch of visual type improvements, and the game will 
+                suddenly look like night and day. Instead of a series of very slow improvements, I want a sudden big one.
+                If that makes sense.
+              </p>              
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_viewedItem_tooLong.png" style="width: 50%;">                     
+            </div>
+              <p class="project-details__desc-para">
+                Something useful for new players is the ability to craft tools they can use.
+                Now, I don't have mining speeds or durability on items yet. That will come in a future devlog.
+                But a player still needs at least a wooden tool to mine blocks in the game.
+                Don't forget that earlier in the devlog I mentioned that I forgot to add stone tools to the game.
+                I'll add those behind the scenes between devlogs.
+                So those won't be in the picture right now.
+                Now, you may ask, why don't I add them now. That's because I don't want to. I'm feeling tired and lazy, 
+                and what to get this devlog published so I can start working on the next one in proper.
+              </p>              
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_tools.png" style="width: 50%;">                     
+            </div>                                                              
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                I haven't been adding much blocks, as I've been working on other parts of the game.
+                But, me being me, I have added a few.
+                Actually while working on these new blocks, I realized that I haven't put much love towards the sand 
+                variations of blocks, which is unfortunate since they can be good blocks to build with.
+                So, I'm probably going to have a bunch of new blocks for that in the next devlog.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_devlogFive_blocks.png" style="width: 50%;">
+            </div>
+            
+              <h3 class="project-details__content-title">Items</h3>
+              <p class="project-details__desc-para">
+                I've mainly been adding in items related to future devlogs, or for crafting certain blocks in the game.
+                For instance, I've added paper, leather, and books, in order to craft bookshelves.
+                Not that I have a way to obtain paper or leather in the game yet. Other than the creative menu. 
+                I think I'm getting real close to being able to add these types of items properly into the world soon though.
+              </p>
+              <p class="project-details__desc-para">
+                Also related to items, I have been adding in more crafting recipes for even more of the blocks I currently have in the game.
+                This is just something I've been doing on the side, since it's such a tedious thing to do.
+                And while thinking of crafing recipes for blocks that aren't in the original Minecraft, I have to hope the recipes are balanced enough 
+                to not be too unfair in any way.
+              </p>          
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                I really want to get some people into the game. It's really too early for this,
+                but I want to see what they will do, and what they think the game needs.
+                Hopefully stuff related to building, like "you should add this type of block", 
+                and not something annoying like "you should add a dragon dimension".
+                And as any developer of any game will know: players always find bugs that you didn't even know existed.
+                So, I can't wait to see how many can be found.
+                I'll likey do devlogs like this one every now and then. Devlogs focused on getting the game to be playable with 
+                what is currently in the project, and finding issues before a system is too ingrained to change.
+              </p>
+              <p class="project-details__desc-para">
+                I quickly mentioned this in the introduction, but the next devlog or two will be on the bigger side.
+                Not a huge update or anything, just on the bigger side of the devlogs I've been releasing. I hope at least.
+                I'm not going to spoil it either, but I'm rather excited about it.
+              </p>              
+            </div>
+
+                <a
+                href="BinkyCraft.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_devlogFive_blocks.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_first_pickaxe.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_found_diamonds.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_properBlocks.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_punchWood.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_stone_pickaxe.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_tools.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_viewedItem.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogFive/binkycraft_viewedItem_tooLong.png" style="width: 50%;">                                  
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Unity/ C#</div>
+                <div class="skills__skill">Gimp</div>
+                <div class="skills__skill">Amazing Brain Power</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/BrandonSchuitema">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://koopwhip1129.itch.io/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/itch.io.webp"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Brandon Schuitema</h4>
+            <p class="main-footer__short-desc">
+              Game Programmer, Designer, 3D Modeller, and the Best Ever!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
