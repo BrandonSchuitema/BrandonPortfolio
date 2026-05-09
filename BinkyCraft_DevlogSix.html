@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog Six</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/brandon_picture_mainpage.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Brandon Schuitema</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projects</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Extra Work</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Extra Work </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Six - Enemies and Mobs
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogSix/binkycraft_allmobs.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Six Overview</h3>
+              <p class="project-details__desc-para">
+                I should first state that this addition isn't as large as I would've liked or originally planned.
+                That's because I had a lot going on in my personal life during the creation of this update.
+                And working on all the enemies and mobs that I currently have has demotivated me a little from the project.
+                It wasn't as much fun to work on the game when I spent my little free time I was able to devote to the 
+                project just doing very tedious and repetitive work. Not that I wasn't enjoying it, 
+                but just that I really want to start fully implementing them into the game now.
+                Or just do something else.
+              </p>
+              <p class="project-details__desc-para">
+                So, let's talk about what this update actually is. I have been adding the models and textures for a bunch of 
+                mobs and enemies into the game. That means that I have been opening Blender a lot recently and doing some 
+                modelling and uv work. Which I haven't done in a while, so that was a nice change of pace.
+              </p>
+              <p class="project-details__desc-para">
+                Now, I have been working on the AI for the enemies and mobs, but that will possibly come in the next devlog.
+                I really want to devote some serious time to getting it better.
+                I was originally using Unity's NavMesh system, but I found that to not really be what I want for the mobs.
+                Ironically enough, it can make some enemies too smart. For instance, zombies should be dumb, and just walk straight 
+                to the player, even if there is a wall in the way. I don't think they should be smart enough to walk around.
+                And the NavMesh system wouldn't really be great for enemies like Spiders, which can climb walls. Or for anything that can fly.
+                So, I think I'm just going to write my own code for everything which I would prefer as an end result anyways.
+                I'd be learning a lot more by doing it that way as well.
+                Here's a quick peek into the enemy AI to prove that I am working on it, though it's nothing impressive or interesting yet. It's just a teaser.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <video controls="controls" style="width: 70%">
+                <source src="Images/BinkyCraft/DevlogSix/BinkyCraft_EnemyMovement_Tease.mp4" type="video/mp4">
+              </video>                                                            
+            </div>
+              <p class="project-details__desc-para">
+                I know there's a lot of problems with the enemy AI in the video above, but it's just to have something down and in the game.
+                I'll work more on that in another devlog. This update is not about that.
+                I just wanted to tease it off and see stuff start moving.
+              </p>            
+            
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                Of course the main feature of this devlog is the enemy and mob models and textures. 
+                It'll be obvious right away, that I am not an artist. I might want to redo some of the textures in the future.
+                But for now, they're staying.
+                Here's a list of pictures for all the enemies and mobs.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_bear.png" style="width: 40%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_bee.png" style="width: 40%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_cat.png" style="width: 40%;">     
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_chicken.png" style="width: 40%;">    
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_cow.png" style="width: 40%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_endermen.png" style="width: 40%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_pig.png" style="width: 40%;">     
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_sheep.png" style="width: 40%;">  
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_slime.png" style="width: 40%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_spider.png" style="width: 40%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_wolf.png" style="width: 40%;">    
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_ghast.png" style="width: 40%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_panda.png" style="width: 40%;">                                                              
+            </div>                  
+              <p class="project-details__desc-para">
+                The enemies and mobs are divided up into enemy or mob of course. I define them by a single main characteristic:
+                do they attack the player with or without player interaction. For enemies like zombies or spiders, they'll attack the player right away.
+                Those are enemies. But for mobs like bees or wolves, those will only attack the player if they get attacked first.
+                Otherwise, they'll just go about their business - so a mob.
+                Then there are the mobs like sheeps or cows, which will just run away if attacked.
+              </p>                                                           
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                At this point with every update of the project, it's expected I'll have at least a few new blocks to add.
+                For this update, that would be the different variations of the sand block.
+                I added the sand and sandstone block off to the left side, so that you could see all the different sand blocks together.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_sandstone_blocks.png" style="width: 50%;">
+            </div>
+            
+              <h3 class="project-details__content-title">Items</h3>
+              <p class="project-details__desc-para">
+                In the last devlog I mentioned that I accidentally didn't add the stone variations for tools, 
+                and that I would add them in between updates. I just want to mention that I did actually do that.
+                Here is proof, if you don't believe me.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_stone_tools.png" style="width: 50%;">
+            </div>
+              <p class="project-details__desc-para">
+                I have also been adding in a few items related to the enemies and mobs that I've added into the game.
+                Nothing really worth talking about right now, but just know things are being worked on that I don't always talk about.
+              </p>
+              
+              <h3 class="project-details__content-title">Mobs</h3>
+              <p class="project-details__desc-para">
+                I only added this section to introduce it as a thing that I will start doing in future devlogs.
+                If I add more mobs or do any side tasks related to them, then they will be in this section of the page 
+                for all future devlogs. Unless of course, the devlog itself is as a whole talking about the subject.
+              </p>
+              <p class="project-details__desc-para">
+                There are some things I want to talk about here already though. Firstly, I have made all the models 
+                good to go and ready for animations. Basically what I mean by that is that stuff like legs are all seperate objects,
+                so that they can be animated seperately for things like walking. Stuff like that.
+              </p>
+              <p class="project-details__desc-para">
+                There's also another quick thing I want to talk about related to the enemies and mobs: variations.
+                Even though I don't have that many mobs or enemies in the game, I have the ability now to make a lot more very quickly.
+                And that's because of the models and uv's already being done on them. For instance, I have the zombie model. 
+                A skeleton would use the exact same model, but just with a different texture. 
+                Then there is all the different sheep colours. Then there is the slime. I could have a magma cube in the game,
+                and use the same model as the regular slime.
+                Actually, while writing this, I had the urge to add in those sheep variations, so here you go.
+              </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_allSheeps.png" style="width: 50%;">
+            </div>                                                  
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                I really wish I could've done more for this update, but I just need to start working on other things in the project.
+                And there are always so many other things I could be working on.
+                Which brings me to something I want to discuss.
+                The next devlog may take a longer time to get released.
+                Currently when working on a devlog, I just choose something I feel like working on, and center the devlog around that.
+                Which is fine, but I really want to start planning more on what I'm going to do in the project.
+                So, I'm gonna take some time and start planning out the devlogs for the next while.
+                I may open up Trello for the first time in a while.
+                Though, knowing me, I'm just going to use a notepad.
+              </p>
+              <p class="project-details__desc-para">
+                I also mentioned earlier that the next devlog may be related to Enemy/ Mob AI.
+                That is still very much possible, but I may change my mind and start working on more essential parts of the game experience.
+                For instance, getting a furnace into the game. Or a method to get to the Inferno Realm and back.
+                Or hunger, or stairs/ slabs, or hunger, or so many other very important things to work on. 
+                Right now, enemies can move towards the player. That's something, which is more than a lot of other parts of the game.
+              </p>
+              <p class="project-details__desc-para">
+                This wasn't really a conclusion, and just more of a 'by the way', but whatever. You better have enjoyed reading this.
+              </p>                                      
+            </div>
+
+                <a
+                href="BinkyCraft.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_bear.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_bee.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_cat.png" style="width: 50%;">     
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_chicken.png" style="width: 50%;">    
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_cow.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_endermen.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_pig.png" style="width: 50%;">     
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_sheep.png" style="width: 50%;">  
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_slime.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_spider.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_wolf.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_ghast.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_panda.png" style="width: 50%;">  
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_stone_tools.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_allSheeps.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogSix/binkycraft_sandstone_blocks.png" style="width: 50%;">                            
+              
+              <video controls="controls" style="width: 70%">
+                <source src="Images/BinkyCraft/DevlogSix/BinkyCraft_EnemyMovement_Tease.mp4" type="video/mp4">
+              </video>                 
+            </div>   
+            <br>
+            <br>
+            <br>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Unity/ C#</div>
+                <div class="skills__skill">Gimp</div>
+                <div class="skills__skill">Amazing Brain Power</div>
+                <div class="skills__skill">Blender</div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/BrandonSchuitema">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://koopwhip1129.itch.io/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/itch.io.webp"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Brandon Schuitema</h4>
+            <p class="main-footer__short-desc">
+              Game Programmer, Designer, 3D Modeller, and the Best Ever!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
