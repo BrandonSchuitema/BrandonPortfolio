@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog Ten</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/brandon_picture_mainpage.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Brandon Schuitema</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projects</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Extra Work</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Extra Work </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Ten - The Void Realm
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_void_generation_more.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Ten Overview</h3>
+              <p class="project-details__desc-para">
+                I'll be honest. Minecraft's new announcement about their new dimension called The Sift,
+                has inspired me to work on another dimension for myself.
+                So, I'm making my games version of The End from Minecraft.
+                Though it won't be exactly the same.
+              </p>
+              <p class="project-details__desc-para">
+                This update was another opportunity to push my terrain generation script in some weird directions, so that was cool.
+                I wish I had any faith that my game could properly run the terrain with a much higher height limit, 
+                but I think it'd start lagging pretty good on any computer that wasn't an absolute beast. Like mine is. Subtle brag.
+                In The End Dimension from Minecraft, the terrain is basically just chunks of End Stone floating in a void.
+                Which mine is as well, but I tried to make the chunks of Void Stone take more advantage of height, 
+                so that not all the chunks feel like they're at the exact same height in the void.
+                At least as much as my terrain generation will allow.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_void_generation_more.png" style="width: 50%;">
+              </div>          
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                The biggest main feature of this update is the fact that there is an entirely new dimension in the game.
+                That's big stuff.
+                A whole new dimension to travel and explore.
+                This dimension, like The End in Minecraft, isn't the easiest to travel in.
+                You're lucky if there's a natural bridge between the floating chunks of land, 
+                and even if there is, they're not exactly the most flat of surfaces.
+                I was thinking of adding my own version of the Elytra in this update (and ender pearls as well),
+                but I think I need to severely update my character controller first before I start messing with ways to move around the player more.
+              </p>
+              <p class="project-details__desc-para">
+                Another feature of this update is the amount of new blocks a player can get and build with.
+                I feel like with each new update I do, the blocks are always what I'm most excited about.
+                That's probably the builder in me. Plus I like thinking of ways the player can actually obtain these blocks.
+                You'll see a lot about these blocks in the block section of this page.
+                Along with the blocks, there are some items related to them as well.
+              </p>                                                              
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                One block that'll jump right out to you is probably the Void Stone. Which is everywhere.
+                That's the main block in this dimension.
+                You might also notice patches of what I'm calling Nectar Void Stone.
+                And of course, I made a full set of blocks that can be crafted from the Void Stone.
+                And I should mention this in case any one had the thought: these blocks do look quite different from the sandstone block variations.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_void_realm_generation.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_void_stone_blocks.png" style="width: 50%;">
+              </div>
+              <p class="project-details__desc-para">
+                The plant structures you see all over the place are actually called DurDur Plants, and are comprised of two different blocks.
+                The DurDur Stalk, and the DurDur Seed. The seed is the block at the top of the plant.
+                The resources from the plant blocks can then be crafted into a set of different DurDur blocks.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_durdur_plants.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_durdur_blocks.png" style="width: 50%;">
+              </div>
+              <p class="project-details__desc-para">
+                And don't go thinking that I forgot about the stairs, slabs, and walls.
+                Because I nearly did, and now I'm adding them in last minute.
+                But I do have them in the game now.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_nonBlocks.png" style="width: 50%;">
+              </div> 
+              
+              <h3 class="project-details__content-title">Items</h3>
+              <p class="project-details__desc-para">
+                I did add a few items into this update. One of them being a torch. Which is technically a block, not an item,
+                but I'm counting it an item because of it's size.
+                It's shape is essentially just a smaller wall block, so this was pretty easy to add.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_torches.png" style="width: 50%;">
+              </div>
+              <p class="project-details__desc-para">
+                Then I of course added in some items related to the Void Realm. 
+                In the picture below you'll have DurDur Nectar on the left, and DurDur Fruit on the right.
+                DurDur Nectar does nothing as of yet, but I have some cool ideas to use it in a future update or two.
+                And it can be as you've probably guessed, harvested from Nectar Void Stone.
+                A DurDur Fruit is a type of food that can be crafted from the DurDur Seed.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_durdur_items.png" style="width: 50%;">
+              </div>
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                This update was very fun to work on.
+                I have a lot of fun working on other dimensions because I can get very extreme with everything I add.
+                In the Overworld, things have to be kinda Earth-like, but in other dimensions, I can get crazy.
+                Like look again at the DurDur Fruit.
+              </p>
+              <p class="project-details__desc-para">
+                After this update though, I'm not sure what I want to work on for this game.
+                I know I really need to start buckling down and working on getting the game more complete.
+                Even though it's fun to work on these exciting side projects, they're not really essential to the core of the game.
+                So, maybe I'll make the next update revolve around that, or maybe I'll just make an effort to start adding this type of stuff into the updates.
+              </p>
+              <p class="project-details__desc-para">
+                Also I thought I should mention this before I finish this update.
+                DurDur isn't a complete ripoff of PurPur from Minecraft.
+                A nickname my sister has for me is DurDuh.
+                So PurPur turned into DurDur, the first part of the nickname repeated twice.
+                I thought it was funny that the nickname was able to sneak into the game so easily.
+              </p>
+              <p class="project-details__desc-para">
+                And as a very quick after thought in case any one was wondering.
+                If you combine all the blocks and items in the game, I now have 371 of them. So far.
+              </p>                                 
+            </div>
+
+                <a
+                href="BinkyCraft.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_durdur_blocks.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_durdur_plants.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_torches.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_void_realm_generation.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_durdur_items.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_void_generation_more.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_void_stone_blocks.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogTen/binkycraft_devlogTen_nonBlocks.png" style="width: 50%;">
+            </div>   
+            <br>
+            <br>
+            <br>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Unity/ C#</div>
+                <div class="skills__skill">Gimp</div>
+                <div class="skills__skill">Amazing Brain Power</div>            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/BrandonSchuitema">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://koopwhip1129.itch.io/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/itch.io.webp"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Brandon Schuitema</h4>
+            <p class="main-footer__short-desc">
+              Game Programmer, Designer, 3D Modeller, and the Best Ever!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
